@@ -1,0 +1,7 @@
+[
+    {"title": "PHP Basics Tutorial", "description": "Learn PHP fundamentals."},
+    {"title": "Advanced PHP OOP", "description": "Object-oriented PHP course."},
+    {"title": "Machine Learning with PHP", "description": "Intro to ML using PHP."},
+    {"title": "Web Development Guide", "description": "Learn to build websites with PHP and MySQL."},
+    {"title": "PHP Security Best Practices", "description": "Learn how to secure your PHP apps."}
+]

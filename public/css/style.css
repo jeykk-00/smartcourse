@@ -1,0 +1,126 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Card */
+.container {
+    max-width: 720px;
+    margin: 70px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect on main container */
+.container:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Textarea */
+textarea {
+    width: 100%;
+    height: 130px;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    resize: none;
+    font-size: 14px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover + Focus effect */
+textarea:hover,
+textarea:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 0 2px rgba(79, 172, 254, 0.2);
+}
+
+/* Button */
+button {
+    margin-top: 10px;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 162, 255, 0.4);
+    background: linear-gradient(135deg, #00f2fe, #4facfe);
+}
+
+/* Button click effect */
+button:active {
+    transform: scale(0.98);
+}
+
+/* Result box */
+.result {
+    margin-top: 25px;
+    padding: 20px;
+    border-radius: 12px;
+    background: #f8faff;
+    border-left: 5px solid #4facfe;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.result h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.result h3 {
+    margin-top: 15px;
+    color: #555;
+}
+
+.result ul {
+    padding-left: 20px;
+}
+
+.result li {
+    margin: 6px 0;
+    color: #333;
+}
